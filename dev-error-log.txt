@@ -1,0 +1,5 @@
+1. vue中css无法生效
+可能是vue-loader版本和使用问题，
+解决：安装vue-loader15.9.5版本，配合vue-loader-plugin插件，引用时const VueLoaderPlugin = require('vue-loader/lib/plugin');
+
+2. 
