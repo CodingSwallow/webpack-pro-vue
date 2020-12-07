@@ -32,12 +32,16 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg|bmp|svg)$/,
         use: ['file-loader']
+      },
+      {
+        test: /\.(woff|svg|eot|ttf)\??.*$/,
+        use: ['url-loader']
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './dist/index.html'),
+      template: path.resolve(__dirname, './src/index.html'),
       hash: true
     }),
     new VueLoaderPlugin(),

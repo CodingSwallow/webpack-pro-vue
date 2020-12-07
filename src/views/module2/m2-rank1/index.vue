@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-container">
     m2 rank1
 
     <div class="item-list">
